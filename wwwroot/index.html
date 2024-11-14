@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CalllVideo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.toast.css">
+    <link rel="shortcut icon" type="image/png" href="img/enablex.png"/>
+    <link rel="stylesheet" href="css/jquery.toast.css">
+</head>
+
+<body>
+<body>
+<div class="container">
+    <section id="content">
+
+        <div class="loading">Loading....</div>
+        <div class="login_join_div" style="display: block;padding-bottom: 25px;">
+            <form action="" id="login_form">
+                <!--<h1><img src="img/logo.png" style="max-width:140px;"></h1>-->
+                <div>
+                    <input type="text" placeholder="Enter Name" id="nameText" name="nameText">
+                </div>
+                <div>
+                    <input type="text" placeholder="Enter Room ID" id="roomName" name="roomName">
+                </div>
+                <div>
+                    <h3 style="color: #504357;font-size: 14px;">Lựa chọn vai trò</h3>
+                    <input type="radio" name="usertype" value="moderator" id="moderator" checked/> Chủ phòng &nbsp;
+                    <input type="radio" name="usertype" value="participant" id="participant"/> Người tham gia&nbsp;
+                </div>
+
+                <div class="row col-md-12" style="margin-top: 20px;">
+
+                    <div class="col-md-6" style="">
+                        <input type="submit" value="Tham Gia" class="login_buttons" id="joinRoom">
+                    </div>
+                    <div id="create_room_div" class="col-md-12" style="margin-top: 10px;">
+                        <span style="font-size: 12px;color: #777;margin-top: 32px;">Chưa có Room ID? <a
+                                href="javascript:void(0)" id="create_room" class="">Tạo Room_ID</a></span>
+                    </div>
+
+                </div>
+                <span id="message" style="color: red"></span>
+                <br><br><br>
+
+            </form><!-- form -->
+        </div>
+
+</div><!-- container -->
+</body>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.toast.js"></script>
+<script type="text/javascript" src="../config.js"></script>
+<script src="js/index.js"></script>
+<script src="js/room.js"></script>
+
+</body>
+</html>
